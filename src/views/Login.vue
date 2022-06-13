@@ -1,7 +1,7 @@
 <template>
   <div id="login">
     <b-container>
-      <h1>Desafio Login</h1>
+      <h1>Login</h1>
       <b-card>
         <b-form @submit.prevent="submitForm" :model="formLabelAlign">
           <b-form-group label="Email:" label-for="email">

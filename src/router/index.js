@@ -2,18 +2,20 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home";
 import Login from "@/views/Login";
+import Pokeguiapp from "@/views/Pokeguiapp";
 import { getAuth as auth } from "firebase/auth";
 
 Vue.use(Router);
 
 const routes = [
   {
-    path: "*",
-    redirect: "/login",
+    path: '/',
+    redirect: '/Pokeguiapp',
   },
   {
-    path: "/",
-    redirect: "/login",
+    path: '/Pokeguiapp',
+    name: 'Pokeguiapp',
+    component: Pokeguiapp,
   },
   {
     path: "/login",
